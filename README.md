@@ -1,0 +1,30 @@
+# Menu Toolkit 🛠️
+
+A Python-based menu toolkit for **beginners learning cybersecurity and ethical hacking**.  
+More tools will be added over time 👀
+
+Created by **knjxy**
+
+---
+
+## 📥 Installation (Linux / Debian-based)
+
+Make sure your system is up to date and has Git + Python installed:
+
+```bash
+sudo apt update -y
+sudo apt install git python python3 -y
+git clone https://github.com/corn3rguy/menutoolkit
+cd menutoolkit
+python main.py
+```
+
+INSIDE THE TOOLS FOLDER IS
+nw_scan.py - basic tools for network scanning
+dos.py - taking down wifi 
+phish.py - creating a fake website for yk what :D
+
+DISCLAIMER ⚠️⚠️⚠️
+All tools in this repository are for **educational purposes only**.  
+They are intended to help understand cybersecurity concepts and defensive techniques.  
+**Do not use this code on networks or systems you do not own or have explicit permission to test.**
