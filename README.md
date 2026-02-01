@@ -29,9 +29,6 @@ All tools in this repository are for **educational purposes only**.
 They are intended to help understand cybersecurity concepts and defensive techniques.  
 **Do not use this code on networks or systems you do not own or have explicit permission to test.**
 
-2ND DISCLAIMER ⚠️⚠️⚠️
-dos.py IS BEING WORKED ON, DON'T WORRY :D
-
 # YouTube menu showcase
 link - https://www.youtube.com/watch?v=hRLq6sd1mK8
 
