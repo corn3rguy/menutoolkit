@@ -34,3 +34,6 @@ dos.py IS BEING WORKED ON, DON'T WORRY :D
 
 # YouTube menu showcase
 link - https://www.youtube.com/watch?v=hRLq6sd1mK8
+
+# THE TWO DoS TOOLS!!!
+If the first dos.py doesn't work with aireplay-ng, try dos2.py but first look at the code cuz I'm too lazy to update it xd :D.
